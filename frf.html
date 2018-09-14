@@ -1,0 +1,354 @@
+<!doctype html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <title>FRFS</title>
+
+            <link rel="icon" href="imgs/Key_Club_Logo_normal.png">
+            <link rel="stylesheet" text="text/css" href="css/main.css">
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <style>
+                body{
+                    position:relative;
+                }
+                .nav2{
+                    padding:150px 0px 0px 0px;
+                    position:fixed;
+                }
+                #GI, #CS, #GF, #EF, #S, #FSP, #FAQ, #keynote, #workshops{
+                    padding:50px 0px 0px 0px;
+                }
+                @media screen and (max-width: 775px) {
+                    #myScrollspy {
+                        display: none;
+                    }
+                    .keynote-subcontent-right{
+                        width:100%;
+                        float:none;
+                    }
+                }
+            </style>
+
+        </head>
+        <body data-spy="scroll" data-target="#myScrollspy" data-offset="5">
+            <div ng-app="inform" ng-controller="infoctrl">
+
+        <!-- Navigation -->
+
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color:rgba(16,16,16,0.95);">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Fundrasing Report Forms</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li class="active"><a href="erf.html"><span class="glyphicon glyphicon-info-sign"></span>ERFS</a></li>
+                        <li><a href="mrf.html"><span class="glyphicon glyphicon-certificate"></span>MRFS</a></li>
+                        <li><a href="frf.html"><span class="glyphicon glyphicon-pencil"></span>FRFS</a></li>
+                    </ul>
+               </div>
+           </div>
+        </div>
+
+        <!-- Navigation End -->
+
+        <!-- Content -->
+
+                <div class="container-fluid">
+                    <div class="scrollspy1">
+                        <nav class="col-xs-3" id="myScrollspy">
+                            <ul class="nav nav-pills nav-stacked nav2">
+                                <li class="active"><a href="#GI">General Information</a></li>
+
+                              <!-- <li><a href="#CS">Conference Staff</a></li>-->
+                                <li><a href="#GF">Fundraise</a></li>
+                                <li><a href="#EF">Manage</a></li>
+                                <li><a href="#FSP">Service</a></li>
+                                <li><a href="#keynote">Track Your Progress</a></li>
+                            </ul>
+                        </nav>
+                        <div class="{{screenwidth}}">
+
+                            <div id="GI" class="textcen">
+                                <h2 class="titl" style="padding:0px 0px 5px 0px">General Information</h2>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading"><a href=".ageninfo" class="faq" data-toggle="collapse">2019 Leadership Training Conference</a></div>
+                                    <div class="panel-body collapse in ageninfo">
+                                        <p class="textcen">Date: March 29th - March 31st
+                                            <br>Location: <a href="location.html">{{ ltc_location }}</a>
+                                            <br>Theme: Hawaiian Themed
+                                            <br><br>Join us as we celebrate another service year with outstanding keynote speakers, workshops, networking events, officer elections, and tons of social opportunities! Check out the conference website to learn more about the conference.
+                                            <br><u>Registration</u>
+                                            <br><a href="https://www.regonline.com/builder/site/Default.aspx?EventID=1980599">Register Now!</a>
+                                            <br>Key Club Member: $295
+                                            <br>Key Club Advisor/Chaperone: $325 (two chaperones per room)
+                                            <br>Key Club Advisor/Chaperone: $645 (single room)
+                                            <br>Registration Priority/Guarantee Deadline: February 19, 2018
+                                            <br>Online Registration Deadline: March 7, 2018
+                                            <br>Payment Deadline: March 14, 2018
+                                            <br>Contact the NY Key Club Conference Staff at <a href="mailto:{{ conference_email }}">{{ conference_email }}</a>.
+                                            <br><br>Please Note, Key Clubs that are traveling to LTC via public transportation are responsible for their own transportation to/from the train station. The hotel and/or Key Club does not provide transportation.
+                                            <br><br>Key Club does suggest <a href="http://www.durhamschoolservices.com/Pages/default.aspx">Durham School Services</a> for transportation rental. If interested, please contact Shaun Kelly at 518-569-1887 for more information.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="textcen" id="GF">
+                                <h2>Fundraising</h2>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading"><a href=".gform" class="faq" data-toggle="collapse">Resources</a></div>
+                                    <div class="panel-body collapse in gform">
+                                        <u>Medical Release Form</u>
+                                        <br>The Medical Release Form must be completed and held onto by all attendees of the Leadership Training Conference. This form helps identify and helps us ensure the safety of the attendee. A copy of the Medical Release Form can be found <a href="static/MedicalReleaseForm-copy.pdf">here</a> or below.
+                                        <br>
+                                        <br>
+                                        <u>Early Arrival Activities</u>
+                                        <br>Arrived early to LTC? Have nothing to do? Well take a look at the Early Arrival Activities informational. A copy of the Early Arrival Activities informational can be found <a herf="Early-Arrival-Activities-copy.pdf">here</a> or below!
+                                        <br>
+                                        <br>
+                                        <u>Program Ad Form</u>
+                                        <br>Interested in placing an advertisement in this year's conference program? Well here is your chance! The New York District Key Club is selling advertisements to help cover the costs of this year’s program for the Annual Leadership Training Conference! The space you purchase can be used for text and / or graphics! A link to the form can be found <a href="https://fs8.formsite.com/slld/form285/index.html">here</a> or below!
+                                        <br>
+                                        <br>
+                                        <u>Key Club Delegate Registration</u>
+                                        <br>The Key Club Delegate Registration Form is a document that must be filled out by four school representative, two official delegates and two alternate delegates, in order to participate at the House of Delegates Session. A copy of the Key Club Delegate Registration Form can be found <a href="static/KEY-CLUB-DELEGATE-REGISTRATION-FORM1.pdf">here</a> or below.
+                                        <br>
+                                        <br>
+                                        <div class="btn-group-vertical">
+                                            <a href="static/Confirmation Packet.pdf" class="btn btn-info">Confirmation Packet</a>
+                                            <a href="static/MedicalReleaseForm-copy.pdf" class="btn btn-info">Medical Release Form</a>
+                                            <a href="static/KEY-CLUB-DELEGATE-REGISTRATION-FORM1.pdf" class="btn btn-info">Key Club Delegate Registration Form</a>
+                                            <a href="static/Early-Arrival-Activities-copy.pdf" class="btn btn-info">Early Arrival Activities</a>
+                                            <a href="https://fs8.formsite.com/slld/form285/index.html" class="btn btn-info">Program Ad Form</a>
+                                            <a href="static/fw9.pdf" class="btn btn-info">W-9 Form</a>
+                                            <a href="https://www.youtube.com/watch?v=BL9Gef2FfCU&t=17s" class="btn btn-info">Resgistration Tutorial</a>
+                                            <a href="https://drive.google.com/a/voorheesville.org/file/d/1hjBiubfmcFFATSRzH-6bk6CLlhvKsqgp/view?usp=drivesdk" class="btn btn-info">Program Booklet</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="textcen" id="EF">
+                                <h2>Manage</h2>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading"><a href=".eform" class="faq" data-toggle="collapse">Resources</a></div>
+                                    <div class="panel-body collapse in eform">
+                                        <u>Executive Officer Agreement</u>
+                                        <br>The Executive Officer Agreement is a document that consist of information on running for an Executive Position: Governor, Secretary, and Treasurer. The document gives a brief description of each executive position and what role does each position plays in the New York District. Also, the Executive Officer Agreement contains a form that must be filled out by each candidate and the form must be mailed no later than February 1st to the District Administrator, John Goldstein. A copy to the Executive Officer Agreement can be found <a href="static/ExecutiveOfficer_Agreement_Info-1.pdf">here</a> or below.
+                                        <br>
+                                        <br>
+                                        <u>Endorsement for International Office</u>
+                                        <br>The Endorsement for International Office is a document that consist of information on running for an International Position: International Trustee, Vice President and President. The document gives a desciption of each international position and what role does each position plays in Key Club International. Also, the Endorsement for International has an agreement that must be filled out by each international candidate. A copy to the Endorsement for International Office can be found <a href="static/InternationalEndorsement_Agreement_Info1.pdf">here</a> or below.
+                                        <br>
+                                        <br>
+                                        <u>Election Packet</u>
+                                        <br>The Election Packet covers information regarding seeking office for the 2018-2019 Key Club year. This packet covers procedures, rules, speeches, paperwork, responsibilities, and more. A copy of the Elections Packet can be found <a href="static/NYDKC Elections Packet.pdf">here</a> or below.
+                                        <br>
+                                        <br>
+                                        <div class="btn-group-vertical">
+                                            <a href="static/ExecutiveOfficer_Agreement_Info-1.pdf" class="btn btn-info">Executive Officer Agreement</a>
+                                            <a href="static/InternationalEndorsement_Agreement_Info1.pdf" class="btn btn-info">Endorsement for International Office Agreement</a>
+                                            <a href="static/NYDKC Elections Packet.pdf" class="btn btn-info">Elections Packet</a>
+                                            <a href="static/Delegate Packet.pdf" class="btn btn-info">Delegate Packet</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="FSP" class="textcen">
+                                <h2 class="textcen">Manage</h2>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading textcen"><a href=".afsp" class="faq" data-toggle="collapse">2019 Fundraisers</a></div>
+                                    <div class="panel-body collpase in afsp">
+                                        <ul style="display:block;margin:auto;width:300px;">
+                                            <li>Penny Wars for the Thirst Project</li>
+                                            <li>Miracle Minutes for the Honeybee Conservancy</li>
+                                            <li>Take a Bite Out of Lyme for the Kiwanis Pediatric Lyme Disease Foundation</li>
+                                            <li>Photo Booth for Sunrise Day Camp</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                              <div id="keynote" class="textcen">
+                                <h2 class="textcen" style="padding:0px 0px 5px 0px">Keynote Speakers</h2>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading textcen"><a href=".akeynote" class="faq" data-toggle="collapse">Keynote Speakers</a></div>
+                                    <div class="panel-body collapse in akeynote">
+                                        <div class="keynote-overview">
+                                            <div class="keynote-content-left">
+                                                <img src="imgs/LTC18.jpg" alt="" width="50%">
+                                                <h4>The Walk of Immigrants</h4>
+                                                <p>Saul Flores</p>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="keynote-content-right">
+                                                <p>
+Saul Flores walked 5,328 miles through ten countries to document how grueling and dangerous the journey of immigrants to the United States can be and to raise money for an elementary school in Atencingo, Mexico. The story of his journey, accompanied by a series of photographs, capture the essence of the people, communities, and cultures he encountered along the way.
+ 
+After this life-changing experience, Saul now wants to inspire students to make a positive impact on the world by speaking about the value of servant leadership, philanthropy, and service-learning.
+ 
+The Walk of Immigrants
+Saul spent three months walking, hitchhiking, and sleeping on the ground and in hiding places. His journey began in Ecuador and ended in Charlotte, North Carolina. In three months, he walked 5,328 miles through ten countries and nine border crossings to document how grueling and dangerous the journey of immigrants to the United States can be and to raise money for an elementary school in Atencingo, Mexico.
+ 
+In this keynote, Saul speaks about how as a North Carolina State University senior, he took the “Walk” in the summer of 2010. Student audiences get the opportunity to relive The Walk of the Immigrants along with Saul and create a deeper understanding of the struggles, hardships, joy, and hope that immigrants experience on their journey.</p>
+                                            </div>
+                                            <div class="keynote-overview">
+                                            <div class="keynote-content-left">
+                                                <img src="imgs/LTC18.jpg" alt="" width="50%">
+                                                <h4>Thirst Project</h4>
+                                                <p>Evan Wesley</p>
+                                            </div>
+                                            <br>
+                                            <br>
+                                            <div class="keynote-content-right">
+                                                <p>Evan Wesley is the School Clubs Coordinator at The Thirst Project and before that, he was a Road Warrior intern for The Thirst Project. Evan graduated from the University of Kentucky with a degree in Environmental Science with a focus in water resources.</p>
+                                       </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="S" class="textcen">
+                                <h2 class="textcen">Service</h2>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading"><a href=".aschedule" class="faq" data-toggle="collapse">Tentative 2018 Schedule</a></div>
+                                    <div class="panel-body collpase in aschedule">
+                                        <script id="template" type="text">
+                                            <tr>
+                                                <td>{{starttime}}</td>
+                                                <td>{{endtime}}</td>
+                                                <td>{{title}}</td>
+                                            </tr>
+                                        </script>
+                                        <div class="container-fluid">
+                                            <h1 class="textcen"><a class="fa fa-chevron-left faq" type="button" id="leftclick" aria-hidden="true"></a><span id="date"> Friday, March 23rd, 2018 </span><a style="margin-right:30px;" class="fa fa-chevron-right faq" type="button" id="rightclick" aria-hidden="true"></a></h1>
+                                            <div class="schedule">
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped table-hover">
+                                                        <thead>
+                                                            <th style="text-align:center !important;text-decoration:underline;">Start Time</th>
+                                                            <th style="text-align:center !important;text-decoration:underline;">End Time</th>
+                                                            <th style="text-align:center !important;text-decoration:underline;">Function</th>
+                                                        </thead>
+                                                        <tbody id="tablebody">
+                                                            <script src="js/schedule.js"></script>
+                                                            <script src="js/mustache.js"></script>
+                                                            <script>
+                                                                var rendered = '',x,date = schedule.dayone;
+                                                                var template = $('#template').html();
+                                                                for (x = 1; x < date.length;x++ ){
+                                                                    rendered += Mustache.render(template, date[x]);
+                                                                }
+                                                                $('#tablebody').html(rendered);
+                                                            </script>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                                            
+                                            
+                            
+                            <div id="workshops">
+                                <h2 class="textcen">Track Your Progress</h2>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading textcen"><a href=".workshops" class="faq" data-toggle="collapse">Workshops</a></div>
+                                    <div class="panel-body collapse in workshops">
+                                        <h5 class="textcen">The New York District Key Club will be unmasking the workshops that will be presented at this year's Leadership Training Conference. Below are the workshops that have been revealed so far. As the date of Leadership Training Conference approaches, keep your eye out for another unmasking of workshops!</h5>
+                                        <div class="row">
+                                            <div class="col-md-4" id="workshops-content">
+                                                <h3 class="textcen">WORKSHOP ROUND 1</h3>
+                                                <p><ul><li>Improv Acting </li>
+                                                <li>Birthday Cards</li>
+                                                <li>Yuda Bands</li>
+                                                <li>A Million Thanks</li>
+                                                <li>How to Tie a Tie</li>
+                                                <li>Key Club Trivia</li> 
+                                                <li>Swinging into Service</li>
+                                                <li>College Application Process</li>
+                                                </ul></p>
+                                            </div>
+                                        <div class="col-md-4" id="workshops-content">
+                                                <h3 class="textcen">WORKSHOP ROUND 2</h3>
+                                                <p><ul><li>Youth Opportunities Fund  </li>
+                                                <li>The Awards Processs</li>
+                                                <li>Key Club in the Summer</li>
+                                                <li>Balancing Life, School & Key Club</li>
+                                                <li>Sunrise Day Camp</li>
+                                                <li>Kiwanis District Charities</li> 
+                                                <li>Key Club and Contemporary Issues</li>
+                                                <li>Building a Strong Board: Teamwork & Unity</li>
+                                            <li>Making Meetings Move</li>
+                                            <li>Life after Key Club</li>
+                                                </ul></p>
+                                            </div>
+                                    <div class="col-md-4" id="workshops-content">
+                                                <h3 class="textcen">WORKSHOP ROUND 3</h3>
+                                                <p><ul><li>Running for Higher Office </li>
+                                                <li>Club Advisor 101</li>
+                                                <li>Presidents & Vice Presidents</li>
+                                                <li>Secretary</li>
+                                                <li>Treasurer</li>
+                                                <li>Editor</li> 
+                                                <li>Webmaster</li>
+                                                <li>Members First: Living the Inverted Pyramid</li>
+                                        <li>Thirst Project </li>
+                                                </ul></p>
+                                            </div>
+                                <div class="col-md-4" id="workshops-content">
+                                                <h3 class="textcen">WORKSHOP ROUND 4</h3>
+                                                <p><ul><li>The Art of Advertising with Graphic Design / Brand Guide </li>
+                                                <li>Make It Happen: Turning Ideas into Reality</li>
+                                                <li>How to be an Effective Leader</li>
+                                                <li>Putting Your Best Self Forward: Effective Communications</li>
+                                                <li>Transition into the Collegiate & Professional World</li>
+                                                <li>Public Speaking</li> 
+                                                <li>Event Planning</li>
+                                                <li>Know Your Why: Adding Meaning to Your Work</li>
+                                                </ul></p>
+                                            </div>
+                                            
+                                        </div>
+                                        <h5 class="textcen" style="margin-top:10px">**Please note that workshop offerings are subject to change.**</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="FAQ">
+                                <h2 class="textcen">FAQ</h2>
+                                <div class="panel panel-default" ng-repeat="x in questions">
+                                    <div class="panel-heading textcen"><a href=".{{ x.ref }}" class="faq" data-toggle="collapse"><span class="glyphicon glyphicon-question-sign"></span>{{ x.ques }}</a></div>
+                                    <div class="panel-body textcen {{ x.collapse }} {{ x.ref }}">{{ x.ans }}</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- End Content -->
+
+        </body>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="js/static.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script>$('a[href^="#"]').on('click', function(event) {var target = $(this.getAttribute('href'));if( target.length ) {event.preventDefault();$('html, body').stop().animate({scrollTop: target.offset().top}, 1000);}});</script>
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-82046900-1', 'auto');ga('send', 'pageview');</script>
+    </html>
